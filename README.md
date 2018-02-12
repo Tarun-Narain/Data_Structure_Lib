@@ -5,7 +5,7 @@ These are header files for C++ to use Stack, Queue, Linked Lists , made in c++;
 HOW TO USE;
 1.  include the header file   #include "Stack.h"
 2.  make Stack class object and pass size as parameter; 
-    for ex. Stack obj1(10);   //size is 10
+    for ex. Stack <Data type>obj1(10);   //size is 10 && data type for ex <int>
 3. use push, peek, pop;
     for ex. obj1.push(10);
     //push the value 10, prints error Stack overflow if stack is full.
