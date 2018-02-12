@@ -3,17 +3,18 @@
 
 using namespace std;
 
+template <class T>
 class Stack
 {
 public:
     int top,limit;
-    int stcar[100000];
+    T stcar[100000];
     Stack(int x)
     {
         limit=x;
         top=-1;
     }
-    void push(int val)
+    void push(T val)
     {
         if(top>=limit)
         {
@@ -24,12 +25,12 @@ public:
             stcar[top]=val;
         }
     }
-    int pop()
-    {int val;
+    T pop()
+    {T val;
         if(top<=-1)
         {
             printf("\nError : Stack underflow");
-            return -1;
+            return 0;
         }
         else{
             val=stcar[top];
@@ -47,9 +48,8 @@ public:
             topx--;
         }
     }
-    int peek()
+    T peek()
     {
         return stcar[top];
     }
 };
-
